@@ -359,8 +359,26 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy;  บริษัท แวนด้า โอเอ จำกัด </p>
+        <p>บริษัท แวนด้า โอเอ จำกัด </p>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.product-card').forEach(card => {
+          card.style.cursor = 'pointer';
+          card.addEventListener('click', () => {
+            window.location.href = 'https://janthima0503.github.io/vanda-oa.A11/'; // ใส่ชื่อไฟล์หรือ URL หน้าติดต่อตรงนี้
+          });
+        });
+        const logo = document.querySelector('.logo-container'); // หรือเปลี่ยนเป็นคลาสรูปโลโก้ของคุณ เช่น .logo
+        if (logo) {
+          logo.style.cursor = 'pointer';
+          logo.addEventListener('click', () => {
+            window.location.href = 'https://janthima0503.github.io/Vanda-oa/'; // ลิงก์ไปหน้าแรก (ใส่ชื่อไฟล์หน้าหลักของคุณ)
+          });
+        }
+      });
+    </script>
 
      <script>
         document.addEventListener('DOMContentLoaded', function() {
